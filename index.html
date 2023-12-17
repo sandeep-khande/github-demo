@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; padding-left: 100px; padding-right: 100px; box-shadow: 2px 1px 2px #eee;">
+        <img width="120" height="20px" src="logo.svg" style="padding-top: 20px;"></img>
+        <div style="display: flex; color: #666; cursor: pointer;">
+            <div style="padding: 20px;">
+                Signup
+            </div>
+            <div style="padding: 20px;">
+                About
+            </div>
+            <div style="padding: 20px;">
+                Products
+            </div>
+            <div style="padding: 20px;">
+                Pricing
+            </div>
+            <div style="padding: 20px;">
+                Support
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; padding-top: 40px;">
+        <img width="1000" src="photo.png"></img>
+    </div>
+    <div style="display: flex; justify-content: center; padding-top: 20px; color: #666;">
+        <h1 style="font-weight: 500;">Invest in everything</h1>
+    </div>
+    <div style="display: flex; justify-content: center; color: #666; padding-bottom: 30px;">
+        <h2 style="font-weight: 400;">Online platform to invest in stocks, derivatives, mutual funds, and more</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div style="background-color: #387ed1; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; color: #eee; cursor: pointer; border-radius: 3px; font-size: 20px;">Sign up now</div>
+    </div> 
+    
+    <div class="calculator">
+        <h1>Protfolio Calculator</h1>
+        <div class="card">
+            <div class="form">
+                <form class="input_form">
+                    <div class="captial">
+                        <label for="capital" >Capital</label>
+                        <input type="number" id="capital" placeholder="Enter your captial" value="">
+                    </div>
+                    <div class="interest">
+                        <label >Interest</label>
+                        <input type="number" id="interest" placeholder="Enter Interest">
+                    </div>
+                    <div class="year">
+                        <label >Year</label>
+                        <input type="number" id="year" placeholder="Enter Years">
+                    </div>
+                    <div class="button">
+                        <button class="calculator_button" type="button" onclick="calculateInterest()">Calculate</button>
+                    </div>
+                </form>
+            </div>
+            <h3 id="investedAmount">You have Invested</h3>
+            <h3 id="totalReturns">Total return</h3>
+            <h3 id="futureValue">Future Value</h3>
+        </div>
+    </div>
+</body>
+</html>
